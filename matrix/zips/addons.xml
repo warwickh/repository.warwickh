@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="repository.warwickh" name="warwickh addons" version="0.9.0" provider-name="warwickh">
+<addon id="repository.warwickh" name="warwickh addons" version="0.9.1" provider-name="warwickh">
     <extension point="xbmc.addon.repository" name="warwickh addons">
         <dir minversion="18.0.0" maxversion="18.9.9">
             <info compressed="false">https://raw.githubusercontent.com/warwickh/repository.warwickh/master/leia/zips/addons.xml</info>
@@ -25,15 +25,14 @@
     </extension>
 </addon>
 
-<addon id="plugin.audio.subsonic" name="Subsonic" version="3.0.1" provider-name="BasilFX,grosbouff,silascutler,Heruwar,warwickh">
-<requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.dateutil" version="2.4.2"/>
-    <import addon="script.module.future" version="0.18.2"/>
-</requires>
-<extension point="xbmc.python.pluginsource" library="main.py">
-  <provides>audio</provides>
-</extension>
+<addon id="plugin.audio.subsonic" name="Subsonic" version="3.0.2" provider-name="BasilFX,warwickh">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" />
     <extension point="xbmc.addon.metadata">
         <summary lang="en">Subsonic music addon for Kodi.</summary>
         <summary lang="fr">Extension Subsonic pour Kodi.</summary>
